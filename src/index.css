@@ -1,0 +1,21 @@
+body {
+    margin: 0em;    
+}
+
+.container {
+    background-color: #00bcd4;
+    height: 100vh;
+    text-align: center;
+}
+
+.image {
+    height: 15em;
+}
+
+.message {    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #ff5722;
+    margin: 0em;
+}
