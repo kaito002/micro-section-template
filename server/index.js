@@ -8,13 +8,17 @@ app.use(cors());
 
 app.use(express.static(path.resolve(__dirname, "..", "dist/")))
 
+app.get("/micro-section", (_, res) => {
+    res.sendFile(path.resolve(__dirname, "..", "dist/main.bundle.js"));
+});
+
+app.get("/*/main.bundle.js", (_, res) => {
+    res.sendFile(path.resolve(__dirname, "..", "dist/main.bundle.js"));
+});
+
 app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "..", "dist/index.html"));
 });
-
-app.get("/micro-section", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "..", "dist/main.bundle.js"));
-})
 
 const onServerStarted = () => {
     console.log(`Server is running on port ::${PORT}`);
