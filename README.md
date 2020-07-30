@@ -1,4 +1,4 @@
-#React Micro Section Template
+# React Micro Section Template
 
 This project is a template to create micro-section that will be part of your main-container app
 
